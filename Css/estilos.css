@@ -152,9 +152,9 @@ footer{
     height:550px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
     .mapaContacto{
-        width:300px; 
+        width:100%; 
         height:550px;
     }
 }
