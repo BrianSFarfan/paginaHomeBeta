@@ -48,6 +48,7 @@
 
 
 .wrapper{
+  
   display: grid;
   margin: 50px auto;
   grid-gap: 20px;
@@ -61,14 +62,19 @@
 }
 .wrapper .box{
   width: 350px;
+  margin: auto auto;
   position: relative;
   perspective: 1000px;
 }
 
 @media (max-width: 700px) {
   .wrapper .box{
-    margin: 25px ;
     width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  .wrapper .box{
+    width: 100%;
   }
 }
 .wrapper .box .front-face{
