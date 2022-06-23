@@ -1,0 +1,92 @@
+.TextNav{
+  color: white;
+  margin-top: 1rem;
+}
+.TextNav li{
+  margin-right: 1rem;
+}
+.navColor{
+  background-image: linear-gradient(-225deg, rgb(85, 76, 243) 0%, rgb(29, 143, 225) 48%, rgb(34, 225, 255) 100%);
+}
+.navLateralColor{
+  background-image: linear-gradient(190deg, rgb(85, 76, 243) 0%, rgb(29, 143, 225) 48%, rgb(34, 225, 255) 100%);
+}
+#sidebarCollapse {
+  color: #fff;
+  background: transparent;
+  outline: none;
+  margin: 0 20px;
+}
+#sidebarCollapse:hover {
+  color: rgb(29, 143, 225);
+  background: #fff;
+  outline: none;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    margin-top: 70px;
+    background-image: linear-gradient(360deg, rgb(85, 76, 243) 0%, rgb(29, 143, 225) 48%, rgb(34, 225, 255) 100%);
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+#sidebar .sidebar-header{
+	padding: 20px;  
+  background-image: linear-gradient(180deg, rgb(85, 76, 243) 0%, rgb(29, 143, 225) 48%, rgb(0, 221, 255) 100%);
+}
+#sidebar ul.components{
+	padding: 20px 0px;
+}
+#sidebar ul li a{
+	padding: 10px 0px 10px 0px;
+	font-size: 1.1em;
+	display: block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+#sidebar ul li a:hover {
+    color: rgb(0, 119, 255);
+    background: #fff;
+    text-decoration: none;
+}
+.salir{
+  margin-top: 5rem;
+}
+#content {
+    width: 100%;
+    min-height: 86.7vh;
+    transition: all 0.3s;
+    margin-top: 120px;
+}
+/* CARDS DE PACIENTES */
+.CardTitulo{
+  background-image: linear-gradient(180deg, rgb(85, 76, 243) 0%, rgb(29, 143, 225) 48%, rgb(0, 221, 255) 100%);
+  color:#fff;
+}
+.CardEntero{
+  width: 500px;
+  margin-top: 10px;
+}
+/*NAVBAR*/
+.header {
+  display: flex;
+}
+.menu {
+  float: right;
+}
+
+.logo {
+  float: left;
+}
