@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="../../Img/log.ico" sizes="16x16 32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DENTAL ROJAS | Turnos</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../Css/estilos.css">
+    <link rel="stylesheet" href="../../Css/botones.css">
+    <link rel="stylesheet" href="../../Css/CardPro.css">
+    <link rel="stylesheet" href="../../Css/formTurnos.css">
+    <link rel="stylesheet" href="../../Css/hamburguesa.css">
+    <link rel="stylesheet" href="../../Css/navbarScroll.css">
+    <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="../../Css/whats.css">
+    <link rel="stylesheet" href="../../Css/whats2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!----------------------------------------------------->
+</head>
+
+<body>
+    <!--Navbar-->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light rara sombraB" id="EpicNavbar">
+
+        <a class="navbar-brand d-lg-none" href="#">
+            <img src="../../Img/Logo.png" style="width: 100px; margin-left: 2rem;" alt="Logo Dental Rojas">
+        </a>
+        <!--boton de nav-->
+
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar" disabled aria-controls="myNavbarToggler7" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 2.5rem; border: transparent;">
+                <input type="checkbox" id="btn-menu" >
+                <label for="btn-menu" class="lbl-menu" style="margin-right: 2rem; box-shadow: none;" >
+                    <span id="spn1"></span>
+                    <span id="spn2"></span>
+                    <span id="spn3"></span>
+                </label>
+            </button>
+        </div>
+        <!------------------------>
+        <div class="collapse navbar-collapse underlineEffects navbar-nav mx-auto" id="navbar">
+
+            <ul class="navbar-nav mx-auto">
+                <ul>
+                    <li class="nav-item">
+                        <a class="" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Tratamientos/tratamientos.html">Tratamientos</a>
+                    </li>
+                    <a class="d-none d-lg-block" href="#"><img src="../../Img/Logo.png" style="width: 150px;"></a>
+                    <li class="nav-item">
+                        <a href="turnos.html">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Contacto/contactos.html">Contactos</a>
+                    </li>
+                </ul>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!--BOTON DE WSP-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                     <i class="material-icons icon-font-color">close</i>
+                   </button>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <center><img src="../../Img/Persona.png" width="50"></center>
+                        </div>
+                        <div class="col-md-9" style="margin-left: 10px;">
+                            <p> Hola, ¿en que podemos ayudarte? </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                       <i class="fa fa-send" style="margin-left: -4px;"></i>
+                   </button>
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+               <div class="float" >
+ <i class="fa fa-whatsapp my-float"></i></div>
+           </button>
+        <div class="circle-anime"></div>
+    </div>
+
+    <!--FIN DE BOTON WSP-->
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" id="Titulo">
+        <!-- Banner Image  -->
+
+        <div class="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
+            <div class="row" style="width: 99%;">
+                <center>
+
+                    <div class="content text-center" style="color:#fff">
+
+                        <h1 class="text-white sombraL" style="font-size: 4.5rem; margin:auto ;">Turnos</h1>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Main Content Area -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#fff" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,197.3C640,192,800,128,960,117.3C1120,107,1280,149,1360,170.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+              </svg>
+    <div class="container">
+        <div class="row">
+
+            <!-- CARDS DE BOTONES-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <center>
+                            <br>
+                            <img src="../../Img/img5.png" style="width: 100%;">
+                            <br>
+                        </center>
+                    </div>
+                    <div class="col-md-5">
+                        <center>
+                            <br>
+
+                            <h1 data-aos="zoom-in" data-aos-duration="900" data-aos-delay="100">Turnos Online</h1>
+                            <p style="font-size: 1.2rem;" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200">
+                                En Dental Rojas atendemos desde urgencias en el día hasta lo último en procedimientos dentales quirúrgicos y estéticos.
+
+                            </p>
+                            <p data-aos="zoom-in" data-aos-duration="900" data-aos-delay="300"> Abierto de Lunes a Viernes de 10 a 20hs y Sabados de 16 a 19hs</p>
+
+                            <div class="gap-3 col-md-12 justify-content-center align-items-cente" style="margin-top: 25px; ">
+
+                                <button class="btn btn-danger sombraBEmergencias" data-aos="fade-right" data-aos-duration="1000" type="button" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#ventanaEme" aria-controls="ventanaEme">
+                    Emergencias
+                  </button>
+                                <button class="btn btn-success sombraBWsp" type="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#ventanaWSP" aria-controls="ventanaWSP">
+                    WhatsApp
+                  </button>
+                                <button class="btn btn-primary sombraBTurnosOnline" type="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    Turnos Online
+                  </button>
+
+                            </div>
+                            <br>
+                        </center>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- FIN DE CARDS DE BOTONES-->
+            <p style="margin-top:50px;"></p>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave2" preserveAspectRatio="none"> 
+    <path fill="rgb(255, 255, 255)" fill-opacity="1" d="M0,256L80,218.7C160,181,320,107,480,112C640,117,800,203,960,224C1120,245,1280,203,1360,181.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" ></path>
+  </svg>
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section -->
+            <section>
+                <!--Grid row-->
+                <div class="row">
+                    <!-- LOGO column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-xxl-3 mx-auto mb-5 imagenLogoFooter">
+                        <img src="../../Img/Logo.webp" style="width: 275px;" alt="Logo Dental Rojas">
+                    </div>
+
+                    <!-- LINEA-->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- TRATAMINETOS column -->
+                    <div class="col-md-4 col-lg-2 col-xl-2 col-xxl-2">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Tratamientos</h6>
+                        <p>
+                            <a class="text-white">Ortodoncia</a>
+                        </p>
+                        <p>
+                            <a class="text-white">Implantes</a>
+                        </p>
+                        <p>
+                            <a class="text-white">Cirugias</a>
+                        </p>
+                        <p>
+                            <a class="text-white">Y más</a>
+                        </p>
+                    </div>
+                    <!-- LINEA -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- LINEA -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- CONTACTOS column -->
+                    <div class="col-md-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contactos</h6>
+                        <p><i class="bi bi-building"></i> Rojas 68, CABA</p>
+                        <p><i class="bi bi-envelope-open"></i> dentalrojasrojas@gmail.com</p>
+                        <p><i class="bi bi-telephone-outbound"></i> 4901-5451</p>
+                        <p><i class="bi bi-telephone-outbound"></i> +54 9 11 6587-9270</p>
+                    </div>
+
+                    <!-- REDES SOCIALES column -->
+                    <div class="col-md-12 col-lg-2 col-xxl-3 ">
+                        <center>
+                            <h6 class="text-uppercase font-weight-bold">¡Seguinos!</h6>
+                            <div class="col-lg ">
+                                <!-- Facebook -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998 ; border-radius: 50%;" href="https://www.facebook.com/Dental-Rojas-1267116686648553/" target="_blank" role="button"><i class="bi bi-facebook"></i></a>
+                                <!-- Instagram -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #b83fb8; border-radius: 50%;" href="https://www.instagram.com/dentalrojas/" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+                                <!-- Wsp -->
+                                <a class="btn btn-primary btn-floating m-1" style="background-color: #2fca00  ; border-radius: 50%;" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank" role="button"><i class="bi bi-whatsapp"></i></a>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Brian.sfarfan@gmail.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!--FIN FOOTER-->
+</body>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+<script src="../../Js/script2.js"></script>
+<!--<script src="Js/navbar.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="../../Bootstrap/js/bootstrap.min.js"></script>
+<!----------------------------------------------------->
+
+</html>
+<!--FIN DE HTML-------------------------------------------------------------->
+
+<!--VENTANA EMERGENCIAS--------------------------->
+<div class="offcanvas offcanvas-start ventana3" tabindex="-1" id="ventanaEme" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
+    <div class="offcanvas-header">
+        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+
+    <div class="offcanvas-body" align="center">
+        <div class="container">
+            <div class="row">
+                <h1 style="font-size: 4rem"><i class="bi bi-exclamation-circle"></i></i> Emergencias</h1>
+                <br>
+                <h1><i class="bi bi-telephone-forward-fill"></i> 49015451</h1>
+                <br>
+                <div>
+                    <a class="btn btn-danger btnEmergencia sombraB" style="border-radius: 50px; width: 20%" role="button" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank">
+                        <div class="row">
+                            <div class="d-flex col-2">
+                                <i class="bi bi-exclamation-circle"></i></i>
+                            </div>
+                            <div class="col-8">
+                                Llamar Ahora
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div style="margin-top:25px">
+                    <img src="../../vistas/Turnos/QR.png" class="sombraA4" style="width: 350px; height: 350px; border-radius: 50px">
+                    <p></p>
+                    <h4>Escanea el codigo QR para hablar con nosotros</h4>
+                    <h5>Si tenes una urgencia te atendemos en el acto.</h5>
+                    <h5>No lo dudes, ¡Te esperamos!</h5>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------>
+<!--VENTANA WHATSAPP--------------------------->
+<div class="offcanvas offcanvas-start ventana2" tabindex="-1" id="ventanaWSP" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
+    <div class="offcanvas-header">
+        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="offcanvas-body" align="center">
+        <div class="container">
+            <div class="row">
+                <h1 style="font-size: 4rem"><i class="bi bi-whatsapp"></i> WhatsApp</h1>
+                <br>
+                <h2><i class="bi bi-telephone-plus-fill"></i> +54 9 11 65879270</h2>
+                <br>
+                <div>
+                    <a class="btn btn-success btnWsp sombraB" style="border-radius: 50px; width: 20%" role="button" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank">
+                        <div class="row">
+                            <div class="d-flex col-2">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <div class="col-8">
+                                Abrir WhatsApp
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div style="margin-top:25px">
+                    <img src="../../vistas/Turnos/QR.png" class="sombraA4" style="width: 350px; height: 350px; border-radius: 50px">
+                    <p></p>
+                    <h4>Escanea el codigo QR para hablar con nosotros</h4>
+                    <h4>¡Te esperamos!</h4>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------------------------------------------------>
+
+<!--VENTANA TURNOS--------------------------->
+<!------------------------------------------------------------------------------------------------------>
+
+<div class="offcanvas offcanvas-start ventana1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
+
+    <div class="offcanvas-header">
+
+        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
+
+
+        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="offcanvas-body" align="center">
+
+        <div class="container">
+            <div class="row">
+                <h2>Formulario de Turno</h2>
+                <p></p>
+                <div class="col-md-12">
+                    <form action="#" class="form">
+
+                        <!-- Progress bar -->
+                        <div class="progressbar">
+                            <div class="progress" id="progress"></div>
+                            <div class="progress-step progress-step-active" data-title="Tratamiento"></div>
+                            <div class="progress-step" data-title="Dentista"></div>
+                            <div class="progress-step" data-title="Fecha"></div>
+                            <div class="progress-step" data-title="Paciente"></div>
+                        </div>
+                        <form action="" method="POST">
+                            <!-- Formulario Tratamientos -->
+                            <div class="form-step form-step-active">
+                                <div class="container">
+                                    <h4>Tratamiento</h4><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4">
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos1" autocomplete="off" value="Ortodoncia">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos1">Ortodoncia</label><br>
+                                            <br>
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos2" autocomplete="off" value="Cirugia">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos2">Cirugia</label><br>
+                                            <br>
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos3" autocomplete="off" value="Implantes">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos3">Implantes</label><br>
+                                            <br>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos4" autocomplete="off" value="Protesis">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos4">Protesis</label><br>
+                                            <br>
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos5" autocomplete="off" value="Estetica">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos5">Estetica</label><br>
+                                            <br>
+                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos6" autocomplete="off" value="Endodoncia">
+                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos6">Endodoncia</label><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="btnForm btn-next width-50 ml-auto">Siguiente</a>
+                                </div>
+                            </div>
+                            <!--Fin Form Tratemientos-->
+                            <!--Form DENTISTA-->
+                            <div class="form-step">
+                                <div class="container">
+                                    <h4>Profesional</h4>
+                                    <br>
+                                    <div class="row justify-content-center">
+
+                                        <div class="col-md-4">
+
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined1" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined1">Seleccionar</label><br>
+                                            </div><br>
+
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined2" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined2">Seleccionar</label><br>
+                                            </div><br>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined3" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined3">Seleccionar</label><br>
+                                            </div><br>
+
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined4" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined4">Seleccionar</label><br>
+                                            </div><br>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined5" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined5">Seleccionar</label><br>
+                                            </div><br>
+
+                                            <div class="cardFormTurnos sombraA4">
+                                                <img src="../../Img/secretary.png" style="width: 100px;">
+                                                <h5 class="Card-title">Nombre y Apellido</h5>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined6" autocomplete="off" value=1>
+                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined6">Seleccionar</label><br>
+                                            </div><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="btns-group">
+                                    <a href="#" class="btnForm btn-prev">Volver</a>
+                                    <a href="#" class="btnForm btn-next">Siguiente</a>
+                                </div>
+                            </div>
+                            <!--FIN DENTISTA-->
+                            <!--Form HORARIO-->
+                            <div class="form-step">
+                                <div class="container">
+                                    <div class="row">
+                                        <!--Fecha-->
+                                        <h5>Fecha y Hora</h5>
+                                        <div class="col-md-6">
+                                            <input class="margin-auto" style="width: 100%; margin-top: 25px" type="date" name="fechacita" id="datePickerId">
+                                        </div>
+
+                                        <!--Hora-->
+                                        <div class="col-md-6">
+                                            <br>
+                                            <div class="row">
+                                                <div class="col">
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo1" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo1">10:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo2" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo2">11:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo3" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo3">12:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo4" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo4">13:00 hs</label><br>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo5" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo5">14:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo6" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo6">15:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo7" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo7">16:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo8" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo8">17:00 hs</label><br>
+                                                </div>
+                                                <div class="col">
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo9" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo9">18:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo10" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo10">19:00 hs</label><br>
+
+                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo11" autocomplete="off">
+                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo11">20:00 hs</label><br>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <br>
+                                    <div class="btns-group">
+                                        <a href="#" class="btnForm btn-prev">Volver</a>
+                                        <a href="#" class="btnForm btn-next">Siguiente</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIN HORARIO-->
+                            <!--form persona-->
+                            <div class="form-step">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="../../Img/Logo.png" style="width: 320px">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Datos del Paciente</h5><br>
+                                        <div class="row gy-3">
+                                            <div class="col-md-4 ">
+                                                <label for="inputEmail4" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control inputForm" id="inputEmail4" name="name">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputEmail4" class="form-label">Apellido</label>
+                                                <input type="text" class="form-control inputForm" id="inputEmail4" name="apellido">
+                                            </div>
+                                            <div class="col">
+                                                <label for="DNI" class="form-label">D.N.I.</label>
+                                                <input type="number" class="form-control inputForm" id="DNI" name="dni">
+                                            </div>
+                                            <div class="col-md-5">
+                                                <label for="NumeroDeTel" class="form-label">Numero de Telefono</label>
+                                                <input type="number" class="form-control inputForm" id="NumeroDeTel" style="text-decoration: none;" name="telf">
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputEmail3" class="form-label">Correo Electronico</label>
+                                                <input type="email" class="form-control inputForm" id="inputEmail3" name="email">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="btns-group">
+                                    <a href="#" class="btnForm btn-prev">Volver</a>
+                                    <input type="submit" value="Enviar Formulario" class="btn btn-outline-success btnForm " />
+                                </div>
+                            </div>
+                            <!--Fin Form Persona-->
+                        </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--FIN DE VENTANA FORMULARIO---------------------------->
+
+<!--JS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
