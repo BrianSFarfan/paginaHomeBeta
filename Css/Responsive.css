@@ -1,0 +1,16 @@
+.colmnna {
+    display: flex;
+}
+
+.imagenLogoFooter img {
+    width: 300px;
+}
+
+@media (max-width: 1199px) {
+    .imagenLogoFooter img {
+        width: 50%;
+    }
+    .colmnna {
+        display: grid;
+    }
+}
