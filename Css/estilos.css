@@ -7,42 +7,36 @@ body {
 
 .banner-image1 {
     background-image: linear-gradient(to top, rgba(12, 52, 131, 0.507) 0%, rgba(102, 153, 255, 0.507) 100%, rgb(107, 140, 206, 0.507) 100%, rgb(162, 182, 223, 0.507) 100%), url('../Img/fondo5.jpg');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner-image2 {
     background-image: linear-gradient(to top, rgba(12, 52, 131, 0.507) 0%, rgb(162, 182, 223, 0.507) 100%, rgb(107, 140, 206, 0.507) 100%, rgb(162, 182, 223, 0.507) 100%), url('../Img/fondo2.jpg');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner-image3 {
     background-image: linear-gradient(to top, rgba(12, 52, 131, 0.507) 0%, rgba(63, 111, 207, 0.507) 100%, rgb(107, 140, 206, 0.507) 100%, rgb(162, 182, 223, 0.507) 100%), url('../Img/fondo6.jpg');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner-image4 {
     background-image: linear-gradient(to top, rgba(17, 72, 180, 0.507) 0%, rgba(71, 110, 189, 0.507) 100%, rgb(107, 140, 206, 0.507) 100%, rgb(162, 182, 223, 0.507) 100%), url('../Img/fondo7.jpg');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner-image5 {
     background-image: linear-gradient(to top, rgba(12, 52, 131, 0.507) 0%, rgba(102, 153, 255, 0.507) 100%, rgb(107, 140, 206, 0.507) 100%, rgb(162, 182, 223, 0.507) 100%), url('../Img/fondo4.jpg');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .banner-image6 {
     background-image: linear-gradient(to top, rgba(12, 77, 207, 0.664) 0%, rgba(0, 75, 226, 0.562) 100%, rgb(107, 140, 206, 0.507) 100%, rgba(61, 97, 168, 0.822) 100%), url('../Img/fondo8.webp');
-    ;
     background-size: cover;
     background-attachment: fixed;
 }

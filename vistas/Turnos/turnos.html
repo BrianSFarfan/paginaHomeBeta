@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DENTAL ROJAS | Turnos</title>
     <!-- CSS -->
+
+    <link rel="stylesheet" href="botonesTurnos.css">
+
     <link rel="stylesheet" href="../../Css/estilos.css">
     <link rel="stylesheet" href="../../Css/botones.css">
     <link rel="stylesheet" href="../../Css/CardPro.css">
@@ -16,10 +19,6 @@
     <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-
     <link rel="stylesheet" href="../../Css/whats.css">
     <link rel="stylesheet" href="../../Css/whats2.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -28,7 +27,10 @@
     <!----------------------------------------------------->
 </head>
 
-<body>
+<body style="    background-image: url('../../Img/fondo5.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;">
     <!--Navbar-->
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-light rara sombraB" id="EpicNavbar">
@@ -106,79 +108,144 @@
 
     <!--FIN DE BOTON WSP-->
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" id="Titulo">
-        <!-- Banner Image  -->
 
-        <div class="banner-image3 w-100 vh-100 d-flex justify-content-center align-items-center">
-            <div class="row" style="width: 99%;">
-                <center>
+    <!-- Banner Image  -->
 
-                    <div class="content text-center" style="color:#fff">
+    <div class="fondoTurnos">
+        <div class="cardTurno">
 
-                        <h1 class="text-white sombraL" style="font-size: 4.5rem; margin:auto ;">Turnos</h1>
-                    </div>
-                </center>
+            <div class="nav divBotones" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="botonTurnos " id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="false" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"><i class="bi bi-envelope-open" ></i> Email </button>
+                <button class="botonTurnos active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000"><i class="bi bi-whatsapp" ></i> WhatsApp</button>
+                <button class="botonTurnos" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000"><i class="bi bi-telephone-outbound" ></i> Emergencias</button>
             </div>
-        </div>
-    </div>
-    <!-- Main Content Area -->
-    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                <path fill="#fff" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,197.3C640,192,800,128,960,117.3C1120,107,1280,149,1360,170.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-              </svg>
-    <div class="container">
-        <div class="row">
+            <div class="tab-content divContenido" id="v-pills-tabContent" data-aos="fade-up" data-aos-duration="1000">
+                <!--CORREO-->
+                <div class="tab-pane fade  text-center" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
-            <!-- CARDS DE BOTONES-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <center>
-                            <br>
-                            <img src="../../Img/img5.png" style="width: 100%;">
-                            <br>
-                        </center>
-                    </div>
-                    <div class="col-md-5">
-                        <center>
-                            <br>
+                    <h3>Turnos por Email</h3>
+                    <div class="container">
+                        <div class="row d-flex justify-content-center align-content-center">
+                            <div class="col-md-8 ">
 
-                            <h1 data-aos="zoom-in" data-aos-duration="900" data-aos-delay="100">Turnos Online</h1>
-                            <p style="font-size: 1.2rem;" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="200">
-                                En Dental Rojas atendemos desde urgencias en el día hasta lo último en procedimientos dentales quirúrgicos y estéticos.
 
-                            </p>
-                            <p data-aos="zoom-in" data-aos-duration="900" data-aos-delay="300"> Abierto de Lunes a Viernes de 10 a 20hs y Sabados de 16 a 19hs</p>
 
-                            <div class="gap-3 col-md-12 justify-content-center align-items-cente" style="margin-top: 25px; ">
+                                <form class="row g-3 formulario">
 
-                                <button class="btn btn-danger sombraBEmergencias" data-aos="fade-right" data-aos-duration="1000" type="button" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#ventanaEme" aria-controls="ventanaEme">
-                    Emergencias
-                  </button>
-                                <button class="btn btn-success sombraBWsp" type="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#ventanaWSP" aria-controls="ventanaWSP">
-                    WhatsApp
-                  </button>
-                                <button class="btn btn-primary sombraBTurnosOnline" type="button" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    Turnos Online
-                  </button>
+                                    <div class="col-4">
+                                        <label for="validationDefault01" class="form-label">Nombre/s</label>
+                                        <input type="text" class="form-control" id="validationDefault01" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="validationDefault02" class="form-label">Apellido/s</label>
+                                        <input type="text" class="form-control" id="validationDefault02" placeholder="Apellido" required>
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="validationDefaultUsername" class="form-label">DNI</label>
+                                        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="DNI" required>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <label for="validationDefaultUsername" class="form-label">Telefono</label>
+                                        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="+54 9 11 6587-9270" required>
+                                    </div>
+                                    <div class="col-5">
+                                        <label for="validationDefaultUsername" class="form-label">Correo</label>
+                                        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="dentalrojasrojas@gmail.com" required>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="validationDefaultUsername" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Consulta de Tratamiento" required>
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <label for="validationDefaultUsername" class="form-label">Mensaje</label>
+
+                                        <textarea class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" placeholder="Mensaje..." id="floatingTextarea2" style="height: 100px" placeholder="Mensaje"></textarea>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="botonTurnoAnimado" type="submit">Enviar <i class="bi bi-envelope"></i><i class="bi bi-arrow-right"></i></button>
+                                    </div>
+
+                                </form>
 
                             </div>
-                            <br>
-                        </center>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN DE CORREO-->
+                <!--WHATS-->
+                <div class="tab-pane fade show active text-center" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <div class="container">
+                        <div class="row">
+                            <!--IZQUIERDA-->
+                            <div class="col-md-6 " style="margin: auto;">
+                                <h2>Pedi tu turno!</h2>
+                                <p style="font-size: 1.3rem;">En Dental Rojas atendemos desde urgencias en el día hasta lo último en procedimientos dentales quirúrgicos y estéticos.
+                                </p>
+                                <p style="font-size: 1.2rem;">Escanea el codigo QR para hablar con nosotros ¡Te esperamos!</p>
+
+                                <div class="d-flex justify-content-center">
+                                    <a class="botonTurnoAnimado" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank" role="button"> <i class="bi bi-whatsapp"></i> Abrir WhatsApp</a>
+                                </div>
+                                <p style="font-size: 1.2rem; margin-top: -25px;">
+                                    </i> +54 9 11 6587-9270 </p>
+                            </div>
+                            <!--FIN DE IZQUIERDA-->
+                            <!--DERECHA-->
+                            <div class="col-md-6 " style="margin: auto;">
+                                <img src="../../Img/QR.jpg" alt="QR ROJAS DENTRAL ROJAS DENTISTA" class="QRimg">
+                            </div>
+                            <!--FIN DERECHA-->
+                        </div>
+
+                    </div>
+                </div>
+                <!--FIN DE WHATS-->
+                <!--EMERGENCIAS-->
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <div class="container">
+                        <div class="row">
+                            <!--IZQUIERDA-->
+                            <div class="col-md-6 ">
+                                <h2>Atiendete con nosotros!</h2>
+                                <p style="font-size: 1.3rem;">Si tenes una urgencia te atendemos en el acto.
+                                </p>
+                                <p style="font-size: 1.2rem;">Abierto de Lunes a Viernes de 10 a 20hs y Sabados de 16 a 19hs</p>
+
+                                <div class="datosEmerg">
+                                    <p><i class="bi bi-telephone-outbound"></i> 4901-5451</p>
+                                    <p><i class="bi bi-whatsapp"></i> +54 9 11 6587-9270 </p>
+                                    <p><i class="bi bi-building"></i> Rojas 68, CABA</p>
+                                </div>
+
+                                <a class="botonTurnoAnimado text-center" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank" role="button"> <i class="bi bi-whatsapp"></i> Abrir WhatsApp</a>
+
+                            </div>
+                            <!--FIN DE IZQUIERDA-->
+                            <!--DERECHA-->
+                            <div class="col-md-6 " style="margin: auto;">
+                                <iframe class="mapaTurnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.38934045774!2d-58.44449062417734!3d-34.61960015833743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3f3464220d%3A0x52cd0a4e55e75b76!2sDental%20Rojas!5e0!3m2!1ses!2sar!4v1668282122277!5m2!1ses!2sar"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                            <!--FIN DERECHA-->
+                        </div>
+
                     </div>
 
                 </div>
+                <!--FIN EMERGENCIAS-->
             </div>
 
-            <!-- FIN DE CARDS DE BOTONES-->
-            <p style="margin-top:50px;"></p>
         </div>
     </div>
-    <!--FOOTER-->
+
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave2" preserveAspectRatio="none"> 
-    <path fill="rgb(255, 255, 255)" fill-opacity="1" d="M0,256L80,218.7C160,181,320,107,480,112C640,117,800,203,960,224C1120,245,1280,203,1360,181.3L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" ></path>
-  </svg>
+    <footer class="text-center text-lg-start text-white corteFooter">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section -->
@@ -267,325 +334,7 @@
 <!----------------------------------------------------->
 
 </html>
-<!--FIN DE HTML-------------------------------------------------------------->
-
-<!--VENTANA EMERGENCIAS--------------------------->
-<div class="offcanvas offcanvas-start ventana3" tabindex="-1" id="ventanaEme" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
-    <div class="offcanvas-header">
-        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
-    </div>
-
-    <div class="offcanvas-body" align="center">
-        <div class="container">
-            <div class="row">
-                <h1 style="font-size: 4rem"><i class="bi bi-exclamation-circle"></i></i> Emergencias</h1>
-                <br>
-                <h1><i class="bi bi-telephone-forward-fill"></i> 49015451</h1>
-                <br>
-                <div>
-                    <a class="btn btn-danger btnEmergencia sombraB" style="border-radius: 50px; width: 20%" role="button" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank">
-                        <div class="row">
-                            <div class="d-flex col-2">
-                                <i class="bi bi-exclamation-circle"></i></i>
-                            </div>
-                            <div class="col-8">
-                                Llamar Ahora
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div style="margin-top:25px">
-                    <img src="../../vistas/Turnos/QR.png" class="sombraA4" style="width: 350px; height: 350px; border-radius: 50px">
-                    <p></p>
-                    <h4>Escanea el codigo QR para hablar con nosotros</h4>
-                    <h5>Si tenes una urgencia te atendemos en el acto.</h5>
-                    <h5>No lo dudes, ¡Te esperamos!</h5>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!------------------------------------------------------------------------------------------------------>
-<!--VENTANA WHATSAPP--------------------------->
-<div class="offcanvas offcanvas-start ventana2" tabindex="-1" id="ventanaWSP" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
-    <div class="offcanvas-header">
-        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <div class="offcanvas-body" align="center">
-        <div class="container">
-            <div class="row">
-                <h1 style="font-size: 4rem"><i class="bi bi-whatsapp"></i> WhatsApp</h1>
-                <br>
-                <h2><i class="bi bi-telephone-plus-fill"></i> +54 9 11 65879270</h2>
-                <br>
-                <div>
-                    <a class="btn btn-success btnWsp sombraB" style="border-radius: 50px; width: 20%" role="button" href="https://api.whatsapp.com/send?phone=5491165879270" target="_blank">
-                        <div class="row">
-                            <div class="d-flex col-2">
-                                <i class="bi bi-whatsapp"></i>
-                            </div>
-                            <div class="col-8">
-                                Abrir WhatsApp
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div style="margin-top:25px">
-                    <img src="../../vistas/Turnos/QR.png" class="sombraA4" style="width: 350px; height: 350px; border-radius: 50px">
-                    <p></p>
-                    <h4>Escanea el codigo QR para hablar con nosotros</h4>
-                    <h4>¡Te esperamos!</h4>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!------------------------------------------------------------------------------------------------------>
-
-<!--VENTANA TURNOS--------------------------->
-<!------------------------------------------------------------------------------------------------------>
-
-<div class="offcanvas offcanvas-start ventana1" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 120rem;">
-
-    <div class="offcanvas-header">
-
-        <img src="../../Img/Logo.png" style="width: 150px; height: 80px;">
-
-
-        <button type="button" class="btn btn-outline-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
-    </div>
-    <div class="offcanvas-body" align="center">
-
-        <div class="container">
-            <div class="row">
-                <h2>Formulario de Turno</h2>
-                <p></p>
-                <div class="col-md-12">
-                    <form action="#" class="form">
-
-                        <!-- Progress bar -->
-                        <div class="progressbar">
-                            <div class="progress" id="progress"></div>
-                            <div class="progress-step progress-step-active" data-title="Tratamiento"></div>
-                            <div class="progress-step" data-title="Dentista"></div>
-                            <div class="progress-step" data-title="Fecha"></div>
-                            <div class="progress-step" data-title="Paciente"></div>
-                        </div>
-                        <form action="" method="POST">
-                            <!-- Formulario Tratamientos -->
-                            <div class="form-step form-step-active">
-                                <div class="container">
-                                    <h4>Tratamiento</h4><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-md-4">
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos1" autocomplete="off" value="Ortodoncia">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos1">Ortodoncia</label><br>
-                                            <br>
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos2" autocomplete="off" value="Cirugia">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos2">Cirugia</label><br>
-                                            <br>
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos3" autocomplete="off" value="Implantes">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos3">Implantes</label><br>
-                                            <br>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos4" autocomplete="off" value="Protesis">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos4">Protesis</label><br>
-                                            <br>
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos5" autocomplete="off" value="Estetica">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos5">Estetica</label><br>
-                                            <br>
-                                            <input type="radio" class="btn-check" name="options-Tratamientos" id="Tratamientos6" autocomplete="off" value="Endodoncia">
-                                            <label class="btn btn-outline-light margin-auto" for="Tratamientos6">Endodoncia</label><br>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <a href="#" class="btnForm btn-next width-50 ml-auto">Siguiente</a>
-                                </div>
-                            </div>
-                            <!--Fin Form Tratemientos-->
-                            <!--Form DENTISTA-->
-                            <div class="form-step">
-                                <div class="container">
-                                    <h4>Profesional</h4>
-                                    <br>
-                                    <div class="row justify-content-center">
-
-                                        <div class="col-md-4">
-
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined1" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined1">Seleccionar</label><br>
-                                            </div><br>
-
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined2" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined2">Seleccionar</label><br>
-                                            </div><br>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined3" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined3">Seleccionar</label><br>
-                                            </div><br>
-
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined4" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined4">Seleccionar</label><br>
-                                            </div><br>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined5" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined5">Seleccionar</label><br>
-                                            </div><br>
-
-                                            <div class="cardFormTurnos sombraA4">
-                                                <img src="../../Img/secretary.png" style="width: 100px;">
-                                                <h5 class="Card-title">Nombre y Apellido</h5>
-                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined6" autocomplete="off" value=1>
-                                                <label class="btn btn-outline-light margin-autoChico" for="danger-outlined6">Seleccionar</label><br>
-                                            </div><br>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="btns-group">
-                                    <a href="#" class="btnForm btn-prev">Volver</a>
-                                    <a href="#" class="btnForm btn-next">Siguiente</a>
-                                </div>
-                            </div>
-                            <!--FIN DENTISTA-->
-                            <!--Form HORARIO-->
-                            <div class="form-step">
-                                <div class="container">
-                                    <div class="row">
-                                        <!--Fecha-->
-                                        <h5>Fecha y Hora</h5>
-                                        <div class="col-md-6">
-                                            <input class="margin-auto" style="width: 100%; margin-top: 25px" type="date" name="fechacita" id="datePickerId">
-                                        </div>
-
-                                        <!--Hora-->
-                                        <div class="col-md-6">
-                                            <br>
-                                            <div class="row">
-                                                <div class="col">
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo1" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo1">10:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo2" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo2">11:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo3" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo3">12:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo4" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo4">13:00 hs</label><br>
-                                                </div>
-                                                <div class="col">
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo5" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo5">14:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo6" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo6">15:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo7" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo7">16:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo8" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo8">17:00 hs</label><br>
-                                                </div>
-                                                <div class="col">
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo9" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo9">18:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo10" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo10">19:00 hs</label><br>
-
-                                                    <input type="radio" class="btn-check" name="options-tiempo" id="tiempo11" autocomplete="off">
-                                                    <label class="btn btn-outline-light margin-autoChico" for="tiempo11">20:00 hs</label><br>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <br>
-                                    <div class="btns-group">
-                                        <a href="#" class="btnForm btn-prev">Volver</a>
-                                        <a href="#" class="btnForm btn-next">Siguiente</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--FIN HORARIO-->
-                            <!--form persona-->
-                            <div class="form-step">
-                                <div class="row">
-                                    <div class="col">
-                                        <img src="../../Img/Logo.png" style="width: 320px">
-                                    </div>
-                                    <div class="col">
-                                        <h5>Datos del Paciente</h5><br>
-                                        <div class="row gy-3">
-                                            <div class="col-md-4 ">
-                                                <label for="inputEmail4" class="form-label">Nombre</label>
-                                                <input type="text" class="form-control inputForm" id="inputEmail4" name="name">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputEmail4" class="form-label">Apellido</label>
-                                                <input type="text" class="form-control inputForm" id="inputEmail4" name="apellido">
-                                            </div>
-                                            <div class="col">
-                                                <label for="DNI" class="form-label">D.N.I.</label>
-                                                <input type="number" class="form-control inputForm" id="DNI" name="dni">
-                                            </div>
-                                            <div class="col-md-5">
-                                                <label for="NumeroDeTel" class="form-label">Numero de Telefono</label>
-                                                <input type="number" class="form-control inputForm" id="NumeroDeTel" style="text-decoration: none;" name="telf">
-                                            </div>
-                                            <div class="col">
-                                                <label for="inputEmail3" class="form-label">Correo Electronico</label>
-                                                <input type="email" class="form-control inputForm" id="inputEmail3" name="email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="btns-group">
-                                    <a href="#" class="btnForm btn-prev">Volver</a>
-                                    <input type="submit" value="Enviar Formulario" class="btn btn-outline-success btnForm " />
-                                </div>
-                            </div>
-                            <!--Fin Form Persona-->
-                        </form>
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-</div>
-
-
-<!--FIN DE VENTANA FORMULARIO---------------------------->
+<!--FIN DE HTML-->
 
 <!--JS-->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
